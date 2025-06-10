@@ -1,0 +1,28 @@
+.header {
+  height: 10rem;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+}
+.logo-box {
+  height: 100%;
+  width: 30%;
+  background-image: url(/assets/logo-plateforme/logos-PNG/Logo_Baseline_Plateforme_Blc.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 2rem;
+}
+.navbar a {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.navbar a:hover {
+  color: #ffffff;
+  text-shadow: -1px 0px 20px var(--secondary-color);
+}

@@ -1,0 +1,72 @@
+.content {
+  padding: 20px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  height: 100%;
+}
+.content h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.remplissage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.remplissage label {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+.remplissage progress {
+  width: 80%;
+  height: 2rem;
+  appearance: none;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: var(--hover-color);
+}
+.remplissage progress::-webkit-progress-bar {
+  background-color: var(--hover-color);
+}
+.remplissage progress::-webkit-progress-value {
+  background-color: var(--primary-color);
+}
+.remplissage span {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #006aff;
+  font-weight: bold;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+th,
+td {
+  padding: 0.8rem 0.5rem;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  text-align: left;
+}
+thead {
+  background-color: #e6f0ff;
+}
+th {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+td {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+section {
+  margin-bottom: 3rem;
+}

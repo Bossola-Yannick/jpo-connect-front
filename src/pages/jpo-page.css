@@ -1,0 +1,40 @@
+.jpo-page {
+  text-align: center;
+  color: var(--text-color);
+}
+.box-jpo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.box-location-select {
+  margin-block: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+}
+.button-location {
+  width: 10rem;
+}
+.button-location:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+}
+.button-location-active {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  padding: 0.2rem 1.2rem;
+  font-weight: bold;
+}
+.program-box {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 3rem;
+}
+.program-info {
+  width: 50%;
+  margin: 0 auto;
+}
