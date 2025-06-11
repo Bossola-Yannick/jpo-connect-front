@@ -13,6 +13,23 @@ export default function JPO() {
     "brignoles",
   ];
   const [activeLocation, setActiveLocation] = useState("marseille");
+  const [jpoList, setJpoList] = useState([]);
+  const getAllJPO = async () => {
+    const response = await fetch("http://localhost/jpo_connect_back/api/jpo", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      credentials: "include",
+    });
+
+    const result = await response.json();
+    if (result.status === "error") {
+      console.log(result.message);
+    } else {
+      setJpoList(result);
+      console.log(jpoList);
+    }
+  };
+  getAllJPO();
   function handleActive(location) {
     setActiveLocation(location);
   }
